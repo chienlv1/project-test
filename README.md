@@ -7,7 +7,9 @@ This is a description of my project.
 To install this project, follow these steps:
 
 - npm install
-if permission denied
+
+If permission denied
+
 - sudo npm install
 
 ## Start Project
