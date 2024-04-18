@@ -1,0 +1,30 @@
+@mixin breakpointMin($point) {
+    @if $point == small {
+        @media (min-width: 640px) { @content; }
+    }
+    @if $point == medium {
+        @media (min-width: 900px) { @content; }
+    }
+    @if $point == large {
+        @media (min-width: 1200px) { @content; }
+    }
+}
+@mixin breakpointMax($point) {
+    @if $point == small {
+        @media (max-width: 640px) { @content; }
+    }
+    @if $point == medium {
+        @media (max-width: 900px) { @content; }
+    }
+    @if $point == large {
+        @media (max-width: 1200px) { @content; }
+    }
+}
+
+@mixin transition($duration) {
+    -webkit-transition: $duration;
+    -moz-transition: $duration;
+    -ms-transition: $duration;
+    -o-transition: $duration;
+    transition: $duration;
+}

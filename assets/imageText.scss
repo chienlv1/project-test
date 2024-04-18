@@ -1,0 +1,47 @@
+.image-text {
+    &.container{padding-top: 25px};
+    .image-text-row {
+        align-items: center;
+        @include breakpointMax(small){
+            flex-direction: column-reverse;
+            padding-top: 45px;
+        }
+    }
+    .image-text-img {
+        width: 100%;
+        height: 100%;
+        max-width: 508px;
+        max-height: 549px;
+    }
+    .image-text-box {
+        .image-text-flag {
+            width: 94px;
+            height: 7px;
+            background-color: $danger-color;
+            display: block;
+        }
+        h2 {
+            margin: 30px 0px;
+            @include breakpointMin(medium){
+                font-size: 40px;
+                line-height: 50px;
+            }
+        }
+        p {
+            @include breakpointMin(small){
+                max-width: 351px;
+            }
+        }
+        .image-text-box-link {
+            color: $primary-color;
+            font-size: $font-size-base;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            svg {
+                margin-left: 6px;
+            }
+        }
+    }
+}

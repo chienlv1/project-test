@@ -1,0 +1,70 @@
+.footer {
+    &.container{padding-top: 30px};
+    .links {
+        padding-bottom: 40px;
+    }
+    h5 {
+        color: $text-color;
+        margin-bottom: 15px;
+    }
+        @include breakpointMax(medium){
+            .links-row {
+                .col-2 {
+                    &:last-child{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    .links-menu {
+        .links-item {
+            display: flex;
+            color: $second-text-color;
+            padding: 5px 0px;
+            font-weight: $font-weight-bold;
+            font-size: $font-size-small;
+            @include breakpointMin(small){
+                align-items: center;
+                font-size: $font-size-base;
+            }
+            span{
+                display: block;
+                width: 100%;
+                margin-left: 10px;
+                line-height: 24px;
+            }
+            
+        }
+    }
+    .footer-bottom {
+        background-color: $color-light-gray;
+        .footer-bottom-text {
+            font-weight: $font-weight-bold;
+            color: $second-text-color;
+        }
+    }
+    .footer-bottom-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 0px;
+        height: 74px;
+        flex-wrap: wrap;
+        @include breakpointMax(small){
+            justify-content: center;
+            flex-direction: column;
+            padding: 10px 0px;
+            height: auto;
+            .footer-bottom-text {
+                margin-bottom: 10px;
+            }
+        }
+        .footer-social {
+            display: flex;
+            align-items: center;
+            max-width: 112px;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+}
